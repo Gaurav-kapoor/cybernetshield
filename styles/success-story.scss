@@ -14,17 +14,21 @@
             padding: 20px 30px;
             text-align: center;
             border-radius: 8px;
-.count {
-    display: inline-flex;
-}
+
+            .count {
+                display: inline-flex;
+                align-items: center;
+            }
+
             h4 {
                 color: #fff;
                 font-size: 26px;
                 margin-right: 5px;
             }
-            span{
+
+            span {
                 color: #fff;
-                font-size: 26px;  
+                font-size: 26px;
             }
 
             p {
@@ -33,6 +37,30 @@
                 font-weight: 500;
                 margin-top: 15px;
                 margin-bottom: 20px;
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .cards-wrapper {
+            .cards {
+                width: calc(50% - 20px);
+                margin: 0 10px 20px;
+                padding: 20px;
+                h4 {
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .cards-wrapper {
+            .cards {
+                width: 100%;
+                margin: 0 0 20px;
+                padding: 20px;
             }
         }
     }

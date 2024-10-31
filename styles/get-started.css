@@ -21,4 +21,30 @@
 }
 #get-started .column-wrapper a {
   text-decoration: none;
+}
+@media only screen and (max-width: 992px) {
+  #get-started .column-wrapper {
+    max-width: 600px;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    padding: 30px 20px;
+  }
+  #get-started .column-wrapper h3 {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  #get-started .column-wrapper {
+    position: relative;
+    top: 0;
+    max-width: 100%;
+  }
+  #get-started .column-wrapper h3 {
+    font-size: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=get-started.css.map */

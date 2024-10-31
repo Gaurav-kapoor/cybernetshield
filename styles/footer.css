@@ -76,4 +76,30 @@ footer .copyright {
 footer .copyright span {
   color: #fff;
   font-size: 14px;
+}
+@media only screen and (max-width: 992px) {
+  footer .column-wrapper {
+    flex-wrap: wrap;
+  }
+  footer .col-four {
+    width: calc(50% - 10px);
+    margin: 0 5px 20px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  footer {
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .column-wrapper {
+    flex-wrap: wrap;
+  }
+  footer .col-four {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  footer .col-four p {
+    margin-bottom: 20px;
+  }
 }/*# sourceMappingURL=footer.css.map */

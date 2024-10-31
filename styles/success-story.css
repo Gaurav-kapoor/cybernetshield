@@ -17,6 +17,7 @@
 }
 #success-story .cards-wrapper .cards .count {
   display: inline-flex;
+  align-items: center;
 }
 #success-story .cards-wrapper .cards h4 {
   color: #fff;
@@ -33,4 +34,24 @@
   font-weight: 500;
   margin-top: 15px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 767px) {
+  #success-story .cards-wrapper .cards {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+    padding: 20px;
+  }
+  #success-story .cards-wrapper .cards h4 {
+    font-size: 20px;
+  }
+  #success-story .cards-wrapper .cards p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #success-story .cards-wrapper .cards {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 20px;
+  }
 }/*# sourceMappingURL=success-story.css.map */
