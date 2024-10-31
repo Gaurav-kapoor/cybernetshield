@@ -1,0 +1,175 @@
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 9999;
+  height: 120px;
+  padding: 0 0 20px;
+  background: transparent;
+  box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header.color {
+  background: #021a36;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+header.color .top-nav {
+  background: #021a36;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+header .top-nav {
+  width: 100%;
+  padding: 5px 0;
+}
+header marquee {
+  font-size: 16px;
+  color: #0fc3a7;
+}
+header .header-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0 10px;
+}
+header .header-wrapper .logo {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+header .header-wrapper .logo img {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+header .header-wrapper .logo p {
+  margin-left: 10px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+header .header-wrapper .menu ul {
+  list-style: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+header .header-wrapper .menu ul li {
+  margin: 0 15px;
+}
+header .header-wrapper .menu ul li:hover a {
+  color: #0fc3a7;
+}
+header .header-wrapper .menu ul li.dropdown-menu:hover a::before {
+  transform: rotate(180deg);
+  border-top-color: #0fc3a7;
+}
+header .header-wrapper .menu ul li.dropdown-menu:hover .inner-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}
+header .header-wrapper .menu ul li.dropdown-menu > a {
+  position: relative;
+}
+header .header-wrapper .menu ul li.dropdown-menu > a::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  right: -20px;
+  border-top: 8px solid #fff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu {
+  position: absolute;
+  top: 85px;
+  width: 96%;
+  left: 20px;
+  background: #fff;
+  z-index: 1;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading {
+  width: 30%;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading .inner-menu {
+  padding: 20px 30px;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading .inner-menu.show {
+  background: #f1e9e9;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading a {
+  display: block;
+  margin-bottom: 12px;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading p {
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading {
+  width: 70%;
+  background: #f1e9e9;
+  padding: 20px;
+  position: relative;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: url(.././images/pattern.jpg) 40% 30%;
+  background-repeat: no-repeat;
+  z-index: 0;
+  opacity: 0.5;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading ul {
+  display: none;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading ul.show {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: normal;
+  position: relative;
+  z-index: 1;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading ul li {
+  margin: 0 5px 20px;
+  width: calc(50% - 10px);
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading ul li:hover a {
+  color: #fff;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading ul li:hover a::before {
+  border-left-color: #0fc3a7;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading ul li a {
+  color: #021a36;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  text-decoration: underline;
+}
+header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-subheading ul li p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+header .header-wrapper .menu ul li a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+}/*# sourceMappingURL=header.css.map */

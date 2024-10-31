@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+        integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="./styles/hero-banner.css" rel="stylesheet">
+    <link href="./styles/header.css" rel="stylesheet">
+    <link href="./styles/cards-with-content.css" rel="stylesheet">
+    <link href="./styles/cards-with-links.css" rel="stylesheet">
+    <link href="./styles/success-story.css" rel="stylesheet">
+    <link href="./styles/our-services.css" rel="stylesheet">
+    <link href="./styles/our-partner.css" rel="stylesheet">
+    <link href="./styles/get-started.css" rel="stylesheet">
+    <link href="./styles/footer.css" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: "Outfit", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1380px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        section {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 80px 0;
+        }
+
+        .btn-prim {
+            padding: 18px 32px;
+            border-radius: 0px;
+            appearance: none;
+            box-shadow: none;
+            border: 1px solid #0fc3a7;
+            position: relative;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            span {
+                color: #fff;
+                font-size: 16px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        .btn-prim::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            background: #0fc3a7;
+            transition: all 0.2s linear;
+            z-index: 0;
+        }
+
+        .btn-prim:hover::before {
+            height: 0;
+        }
+
+        .btn-prim:hover {
+            border-color: #0fc3a7;
+        }
+
+        .btn-prim:hover span {
+            color: #0fc3a7;
+        }
+        .btn-prim2 {
+            padding: 18px 32px;
+            border-radius: 0px;
+            appearance: none;
+            box-shadow: none;
+            border: 1px solid #021a36;
+            position: relative;
+            background: transparent;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+
+            span {
+                color: #fff;
+                font-size: 16px;
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+        .btn-prim2::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            background: #021a36;
+            transition: all 0.2s linear;
+            z-index: 0;
+        }
+
+        .btn-prim2:hover::before {
+            height: 0;
+        }
+
+        .btn-prim2:hover {
+            border-color: #fff;
+        }
+
+        .btn-prim2:hover span {
+            color: #fff;
+        }
+
+        .links {
+            text-decoration: none;
+            color: #0fc3a7;
+            position: relative;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .links::after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            bottom: 0;
+            right: -20px;
+            margin: auto;
+            width: 22px;
+            height: 22px;
+            background: url('./images/arrow.svg') 100% 100%;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            z-index: 1;
+            transition: all 0.3s ease;
+        }
+
+        .links:hover::after {
+            transform: translateX(5px);
+        }
+
+        .title {
+            text-align: center;
+
+            h2 {
+                font-size: 42px;
+                color: #fff;
+            }
+
+            p {
+                font-size: 18px;
+                margin-top: 20px;
+                line-height: 1.5;
+                color: #fff;
+            }
+
+            button {
+                margin-top: 20px;
+            }
+        }
+
+        @media only screen and (max-width: 992px) {
+            section {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="top-nav">
+            <div class="container">
+                <marquee>NEW RELEASE: CyberNetShield Partners with Google Cloud to Strengthen Cyber security Offering
+                    Worldwide
+                </marquee>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="logo">
+                    <p>Cyber NetShield</p>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Why Us</a></li>
+                        <li class="dropdown-menu"><a href="#">Services</a>
+                            <div class="inner-dropdown-menu">
+                                <div class="inner-menu-heading">
+                                    <div class="inner-menu show">
+                                        <a href="#">Unified IT & OT Solutions</a>
+                                        <p>We deliver integrated security solutions across IT and OT environments,
+                                            ensuring seamless protection for critical infrastructure.</p>
+                                    </div>
+                                    <div class="inner-menu">
+                                        <a href="#">Compliance, Risk, and Security Management</a>
+                                        <p>CyberNetShield offers robust compliance and risk management services to
+                                            ensure
+                                            businesses meet regulatory standards while minimizing security risks.</p>
+                                    </div>
+                                    <div class="inner-menu">
+                                        <a href="#">Integrated Cloud and Data Security Solutions</a>
+                                        <p>Our cloud and data security services ensure holistic protection for cloud
+                                            infrastructure and sensitive data.</p>
+                                    </div>
+                                    <div class="inner-menu">
+                                        <a href="#">Secure Access and Identity Management</a>
+                                        <p>We offer comprehensive identity management solutions designed to secure
+                                            access
+                                            to sensitive data and systems.</p>
+                                    </div>
+                                    <div class="inner-menu">
+                                        <a href="#">Expertise-as-a-Service</a>
+                                        <p>Our Expertise-as-a-Service provides organizations with tailored security
+                                            leadership and
+                                            personal protection solutions.</p>
+                                    </div>
+                                </div>
+                                <div class="inner-menu-subheading">
+                                    <ul class="show">
+                                        <li><a href="#">Managed Detection and Response (EDR, XDR, NDR, SIEM SOAR,
+                                                Mailbox Monitoring)</a>
+                                            <p>Implementing these components within a managed detection and response
+                                                strategy
+                                                enhances an organization’s ability to detect, respond to, and recover
+                                                from
+                                                cybersecurity incidents efficiently.</p>
+                                        </li>
+                                        <li><a href="#">DevSecOps Services</a>
+                                            <p>DevSecOps services are essential for organizations aiming to build secure
+                                                applications while maintaining agility and speed in their development
+                                                processes.</p>
+                                        </li>
+                                        <li><a href="#">SASE-as-a-Service (Secure Access Service Edge)</a>
+                                            <p>SASE-as-a-Service represents a paradigm shift in how organizations
+                                                approach
+                                                network security and connectivity. By converging networking and security
+                                                into
+                                                a single framework, SASE enhances protection, simplifies management,
+                                                and supports the modern, distributed workforce.</p>
+                                        </li>
+                                        <li><a href="#">OT Security</a>
+                                            <p>As cyber threats continue to evolve, organizations must adopt a
+                                                comprehensive approach to OT security that encompasses technology,
+                                                processes, and people.</p>
+                                        </li>
+                                        <li><a href="#">Digital Forensics and Incident Response (DF/IR)</a>
+                                            <p>By integrating digital forensics with incident response practices,
+                                                organizations can protect
+                                                their assets, ensure compliance, and improve their overall security
+                                                posture.</p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Regulatory Compliance Consulting and Auditing (GDPR, HIPAA,
+                                                SOC2,PCI DSS, ISO27001 )
+                                                (Security Policies and Standards, Security Audits & Risk Assessments
+                                                )</a>
+                                            <p>Regulatory compliance consulting and auditing are crucial for
+                                                organizations to
+                                                navigate the complexities of data protection laws and standards.</p>
+                                        </li>
+                                        <li><a href="#">Security Awareness Training</a>
+                                            <p>Security awareness training is essential for empowering employees to
+                                                recognize and respond
+                                                to cybersecurity threats effectively.</p>
+                                        </li>
+                                        <li><a href="#">Vulnerability Assessment and Penetration Testing (VAPT)</a>
+                                            <p>By combining proactive assessments with simulated attacks, organizations
+                                                can
+                                                gain a comprehensive understanding of their security posture, prioritize
+                                                remediation efforts, and enhance overall resilience against cyber
+                                                threats.</p>
+                                        </li>
+                                        <li><a href="#">Threat Modelling</a>
+                                            <p>By systematically assessing risks and developing mitigation strategies,
+                                                organizations can
+                                                strengthen their security posture and better protect their assets.</p>
+                                        </li>
+                                        <li><a href="#">Red Teaming</a>
+                                            <p>Red teaming is a powerful method for evaluating an organization’s
+                                                security posture by
+                                                simulating real-world attacks.</p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Comprehensive Monitoring and Observability
+                                            </a>
+                                            <p>Comprehensive monitoring and observability are essential for maintaining
+                                                the health and performance of modern IT systems and applications.</p>
+                                        </li>
+                                        <li><a href="#">Cloud Security Posture Management (CSPM)</a>
+                                            <p>Cloud Security Posture Management (CSPM) is essential for organizations
+                                                leveraging cloud services to maintain a robust security posture and
+                                                ensure compliance.</p>
+                                        </li>
+                                        <li><a href="#">Cloud WorkLoad Protection </a>
+                                            <p>By implementing comprehensive security measures and following best
+                                                practices,
+                                                organizations can effectively protect their workloads from threats,
+                                                ensure compliance, and maintain operational integrity.</p>
+                                        </li>
+                                        <li><a href="#">SaaS Security Posture Management (SaaSSPM)
+                                            </a>
+                                            <p>By implementing effective SaaSSPM practices, organizations can enhance
+                                                their
+                                                security posture, mitigate risks, and ensure the secure use of SaaS
+                                                solutions.</p>
+                                        </li>
+                                        <li><a href="#">Data Security Posture Management (DSPM)
+                                            </a>
+                                            <p>By implementing effective DSPM practices, organizations can enhance their
+                                                overall
+                                                data security posture, mitigate risks, and maintain the trust of
+                                                customers and stakeholders.</p>
+                                        </li>
+                                        <li><a href="#">Backup and Disaster Recovery
+                                            </a>
+                                            <p>By implementing effective strategies and best practices, organizations
+                                                can
+                                                safeguard their information, minimize downtime, and recover quickly from
+                                                incidents.</p>
+                                        </li>
+                                        <li><a href="#">Data Loss Prevention (DLP)
+                                            </a>
+                                            <p>By implementing effective DLP strategies and practices, organizations can
+                                                mitigate
+                                                the risks associated with data loss and breaches, protect their
+                                                reputation, and
+                                                maintain the trust of customers and partners.</p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Multi-Factor Authentication (MFA)
+                                            </a>
+                                            <p>By implementing MFA, organizations can significantly reduce the risk of
+                                                unauthorized
+                                                access and foster greater confidence among users.</p>
+                                        </li>
+                                        <li><a href="#">Privileged Access Management (PAM)
+                                            </a>
+                                            <p>By implementing effective PAM practices, organizations can mitigate risks
+                                                associated
+                                                with privileged accounts, enhance compliance, and protect critical
+                                                assets from
+                                                unauthorized access and potential breaches.</p>
+                                        </li>
+                                        <li><a href="#">MDM-as-a-Service
+                                            </a>
+                                            <p>By implementing effective MDM strategies and best practices,
+                                                organizations can
+                                                enhance device security, ensure compliance, and provide a seamless user
+                                                experience.</p>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="#">Personal Cyber Security
+                                            </a>
+                                            <p>By adopting effective cybersecurity practices and staying informed about
+                                                potential risks, individuals can significantly enhance their online
+                                                safety
+                                                and protect their personal information. </p>
+                                        </li>
+                                        <li><a href="#">vCXSO-as-a-Service
+                                            </a>
+                                            <p>By leveraging external expertise, organizations can improve their
+                                                security posture,
+                                                effectively manage risks, and build trust with customers and
+                                                stakeholders</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="#">Trust Center</a></li>
+                        <li class="dropdown-menu"><a href="#">Resources</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><button type="button" class="btn-prim"><span>Secure Now</span><span></span></button></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="hero-banner">
+        <img src="./images/hero_banner.jpg" alt="hero banner">
+        <div class="container">
+            <div class="column-wrapper wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="content-wrapper">
+                    <h1>Improve your security posture.</h1>
+                    <p>Shield Your Business With Cyber NetShield
+                        Cybersecurity Solutions
+                        Cybersecurity is No Longer Exclusive to Just a Select Few
+                        Get in touch with Cyber NetShield now</p>
+                    <button class="btn-prim"><span>Contact Us</span></button>
+                </div>
+                <img src="./images/lock_shield.png" alt="lock">
+            </div>
+        </div>
+    </section>
+    <section id="cards-with-content">
+        <div class="container">
+            <div class="title wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <h2>Tackle Even the Toughest Cybersecurity Challenges</h2>
+                <p>Cyber NetShield seamlessly integrates with your team to tackle the complex and ever-evolving world of
+                    cybersecurity threats. By staying ahead of the shifting threat landscape, Cyber NetShield identifies
+                    vulnerabilities and implements proactive measures to mitigate risks. This partnership ensures your
+                    organization remains protected and resilient, keeping you one step ahead of potential security
+                    challenges while strengthening your overall defense.</p>
+            </div>
+            <div class="cards-wrapper">
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <img src="./images/card_img1.gif">
+                    <h4>Ransomware Damage
+                        Protection</h4>
+                    <p>"Predicted ransomware damage to reach $256B by 2031; proactive measures can mitigate potential
+                        losses."</p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.7s" data-wow-delay="0.7s">
+                    <img src="./images/card_img2.gif">
+                    <h4>Spear Phishing
+                        Attacks</h4>
+                    <p>"Spear phishing attacks account for 65% of targeted cyberattacks, costing businesses up to $1.6M
+                        per incident."
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.9s" data-wow-delay="0.9s">
+                    <img src="./images/card_img1.gif">
+                    <h4>Business Email
+                        Compromise</h4>
+                    <p>"Non-compliance with legal requirements can result in fines up to 4% of annual revenue under
+                        GDPR."
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <img src="./images/card_img2.gif">
+                    <h4>Compliance & Legal
+                        Requirements</h4>
+                    <p>"Based on IBM data, Cybersecurity Ventures forecasts that by 2025, cybercrime will have an annual
+                        cost of $10.5 trillion. "
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <img src="./images/card_img1.gif">
+                    <h4>Cyber security
+                        Awareness</h4>
+                    <p>"Cybersecurity awareness training can reduce human error-related breaches by up to 70%."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="image-slider" style="padding: 0;">
+        <div class="slide-wrapper">
+            <img src="./images/slide_img1.png">
+            <img src="./images/slide_img2.png">
+            <img src="./images/slide_img3.png">
+        </div>
+    </section>
+
+    <section id="cards-with-links">
+        <div class="container">
+            <div class="title wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <h2>CNS's Service Offerings</h2>
+                <p>Meticulously crafted to meet your unique needs, CybernetShield provides solutions that
+                    effectively tackle the ever-evolving security risks.</p>
+                <button type="button" class="btn-prim"><span>Explore All</span></button>
+            </div>
+            <div class="cards-wrapper">
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <img src="./images/HP_SOC_icn.png">
+                    <h4>Unified IT & OT Solutions
+                    </h4>
+                    <p>We deliver integrated security solutions across IT and OT environments, ensuring seamless
+                        protection for critical infrastructure. Services include Managed Detection and
+                        Response (EDR, XDR, NDR, SIEM, SOAR), OT Security, Digital Forensics and Incident
+                        Response (DF/IR), and comprehensive monitoring to defend against evolving threats.
+                    </p>
+                    <a href="#" class="links">Learn More</a>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.7s" data-wow-delay="0.7s">
+                    <img src="./images/HP_MDR_icn.png">
+                    <h4>Compliance, Risk & Security Management </h4>
+                    <p>CyberNetShield offers robust compliance and risk management services to ensure
+                        businesses meet regulatory standards while minimizing security risks. This includes
+                        Regulatory Compliance Consulting and Auditing for GDPR, HIPAA, SOC2, PCI DSS, ISO27001,
+                        Security Policies and Standards, Security Audits, and Risk Assessments to ensure operational
+                        excellence and legal compliance.
+                    </p>
+                    <a href="#" class="links">Learn More</a>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.9s" data-wow-delay="0.9s">
+                    <img src="./images/HP_Pentesting_icn.png">
+                    <h4>Integrated Cloud & Data Security Solution
+                    </h4>
+                    <p>Our cloud and data security services ensure holistic protection for cloud infrastructure and
+                        sensitive data.
+                        This includes Cloud Security Posture Management (CSPM), Cloud Workload Protection, SaaS
+                        Security Posture Management (SaaSSPM),
+                        Data Security Posture Management (DSPM), Backup and Disaster Recovery, and Data Loss
+                        Prevention (DLP) to safeguard your critical assets.
+                    </p>
+                    <a href="#" class="links">Learn More</a>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <img src="./images/HP_securityawareness_icn.png">
+                    <h4>Security Awareness-as-a-Service
+                    </h4>
+                    <p>We offer comprehensive identity management solutions designed to secure access to sensitive
+                        data and systems. Our services include Multi-Factor Authentication (MFA), Privileged Access
+                        Management (PAM), and Mobile Device Management (MDM)-as-a-Service, all aimed at reducing
+                        unauthorized access and insider threats.
+                    </p>
+                    <a href="#" class="links">Learn More</a>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <img src="./images/HP_darkweb_icn.png">
+                    <h4>Expertise-as-a-Service
+                    </h4>
+                    <p>Our Expertise-as-a-Service provides organizations with tailored security leadership
+                        and personal protection solutions. Services include vCXO-as-a-Service, offering strategic
+                        guidance and cybersecurity oversight, and Personal Cybersecurity, focused on safeguarding
+                        individuals' digital identities and assets.
+                    </p>
+                    <a href="#" class="links">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="success-story">
+        <div class="container">
+            <div class="title wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <h2> Cyber Success Story
+                </h2>
+                <p>Cybersecurity isn't just a name; it guarantees strong protection against constant cyber threats.
+                    We work across the globe, going beyond borders and fields, and have become a reliable partner for
+                    clients everywhere. Our impressive numbers show how committed we are to beating even the toughest
+                    cybersecurity problems. Join us as we build a safer digital future where feeling secure isn't
+                    something special, but something you can count on!
+                </p>
+            </div>
+            <div class="cards-wrapper">
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <div class="count">
+                        <h4 class="counter">25</h4><span>+</span>
+                    </div>
+                    <p>Satisfied Customers</p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.7s" data-wow-delay="0.7s">
+
+                    <div class="count">
+                        <h4 class="counter">5</h4><span>+</span>
+                    </div>
+                    <p>Countries Engaged
+                        Clientele
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.9s" data-wow-delay="0.9s">
+
+                    <div class="count">
+                        <h4 class="counter">4</h4>
+                    </div>
+                    <p>Global SOC
+                        Locations
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+
+                    <div class="count">
+                        <h4 class="counter">50</h4><span>+</span>
+                    </div>
+                    <p>SOC
+                        Specialists
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="our-services">
+        <div class="container">
+            <div class="title wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <h2>Why Do You Need Our Services</h2>
+                <p>Cyber NetShield's 24×7 SOC operates around the clock to monitor, detect, and neutralize cyber
+                    threats, ensuring your business stays resilient and protected from harm.</p>
+            </div>
+            <div class="cards-wrapper">
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <img src="./images/Watchguard-icn.webp">
+                    <h4>24/7 Eyes On Screen
+                    </h4>
+                    <p>Rest easy with Cyber NetShield's unwavering vigilance over your IT infrastructure.
+                        Our dedicated security analysts guarantee rapid threat detection and swift containment,
+                        keeping your systems secure at all times.
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.7s" data-wow-delay="0.7s">
+                    <img src="./images/Price-icn.webp">
+                    <h4>Unbeatable Prices
+                    </h4>
+                    <p>Unlock cutting-edge cybersecurity solutions with Cyber NetShield's unbeatable offers.
+                        Premium protection at competitive prices, delivering top-tier security for your business.
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="0.9s" data-wow-delay="0.9s">
+                    <img src="./images/Threat-Intelligence-icn.webp">
+                    <h4>Threat Intelligence
+                    </h4>
+                    <p>Stay ahead with Cyber NetShield's expertly researched Threat Intelligence Data.
+                        Our clients enjoy complimentary access, enabling informed and proactive cybersecurity
+                        strategies to outpace evolving threats.
+                    </p>
+                </div>
+                <div class="cards wow animate__slideInUp" data-wow-duration="1s" data-wow-delay="1s">
+                    <img src="./images/IT-team-icn.webp">
+                    <h4>Extended IT Team
+                    </h4>
+                    <p>Seamlessly integrate Cyber NetShield with your IT team to enhance security controls.
+                        Fortify defenses against risks and threats with expert guidance for a unified and robust
+                        security strategy.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="our-partner">
+        <div class="container">
+            <div class="title wow animate__fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                <h2>Our Partners</h2>
+            </div>
+            <div class="wrapper">
+                <marquee behavior="alternate">
+                    <img src="./images/partners.png">
+                </marquee>
+                <marquee behavior="alternate" direction="right">
+                    <img src="./images/partners.png">
+                </marquee>
+            </div>
+        </div>
+    </section>
+
+    <section id="get-started">
+        <div class="container">
+            <div class="column-wrapper">
+                <h3>Ready to get started ?
+                    Talk to us today</h3>
+                <a href="#" class="btn-prim2"><span>Get Started</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="column-wrapper">
+                <div class="col-four">
+                    <img src="./images/logo.svg">
+                </div>
+                <div class="col-four">
+                    <p>About Us</p>
+                    <ul>
+                        <li><a href="#">Why Us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Trust Center</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-four">
+                    <p>Subscribe to our Cyber Security Newsletter</p>
+                    <form>
+                        <input type="email">
+                        <button type="submit" class="btn-prim"><span>Subscribe</span></button>
+                    </form>
+                </div>
+                <div class="col-four">
+                    <p>Contact Us</p>
+                    <span>Phone: <a href="tel:+1 (510) 640-3882">+1 (510) 640-3882</a></span>
+                    <span>Email: <a href="mailto:info@cybernetshield.com">info@cybernetshield.com</a></span>
+                    <div class="location">
+                        <p>USA</p>
+                        <p>CyberNetShield C/O PEARSK LLC 2810 N Church St PMB 427135 , Wilmington, Delaware 19802, US
+                        </p>
+                        <p>India</p>
+                        <p>Sector 75 Mohali, India</p>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <span>© 2024 CyberNetShield Inc. All Rights Reserved.</span>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
+        integrity="sha512-Rd5Gf5A6chsunOJte+gKWyECMqkG8MgBYD1u80LOOJBfl6ka9CtatRrD4P0P5Q5V/z/ecvOCSYC8tLoWNrCpPg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW({ animateClass: 'animate__animated' }).init();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./scripts/header.js"></script>
+    <script src="./scripts/image-slider.js"></script>
+</body>
+
+</html>

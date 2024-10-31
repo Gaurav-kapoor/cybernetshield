@@ -1,0 +1,26 @@
+#get-started {
+    background-color: #01152e;
+padding: 60px 0;
+    .column-wrapper {
+        position: absolute;
+        top: -50px;
+        right: 0;
+        left: 0;
+        margin: auto;
+        padding: 50px;
+        background: #0fc3a7;
+        max-width: 900px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 8px;
+
+        h3 {
+            font-size: 32px;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,38 @@
+#our-services {
+  background: #021a36;
+}
+#our-services .cards-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+#our-services .cards-wrapper .cards {
+  width: calc(25% - 20px);
+  margin: 0 10px 20px;
+  padding: 20px 30px;
+  text-align: left;
+  border-radius: 8px;
+  border: 1px solid #0fc3a7;
+}
+#our-services .cards-wrapper .cards img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+#our-services .cards-wrapper .cards h4 {
+  color: #fff;
+  font-size: 22px;
+}
+#our-services .cards-wrapper .cards p {
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 1.35;
+}/*# sourceMappingURL=our-services.css.map */
