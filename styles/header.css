@@ -196,7 +196,7 @@ header .header-wrapper .menu-mobile .hamburger input {
 }
 header .header-wrapper .menu-mobile .hamburger input:checked ~ span {
   opacity: 1;
-  transform: rotate(-45deg) translate(0px, -1px);
+  transform: rotate(-44deg) translate(0px, 0px);
   background: #0fc3a7;
 }
 header .header-wrapper .menu-mobile .hamburger input:checked ~ span:nth-last-child(3) {
