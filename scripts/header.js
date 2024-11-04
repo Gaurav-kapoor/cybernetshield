@@ -39,7 +39,7 @@ $(window).scroll(function() {
     $('#success-story .counter').each(function() {
         let $this = $(this);
         jQuery({ Counter: 0 }).animate({ Counter: $this.text() }, {
-            duration: 2000,
+            duration: 8000,
             easing: 'swing',
             step: function () {
                 $this.text(Math.ceil(this.Counter));

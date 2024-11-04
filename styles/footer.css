@@ -8,12 +8,33 @@ footer .column-wrapper {
   justify-content: space-between;
 }
 footer .col-four {
-  width: calc(25% - 10px);
+  width: calc(33.33% - 10px);
   margin: 0 5px;
+  padding-right: 110px;
+}
+footer .col-four .address p {
+  margin: 10px 0;
+}
+footer .col-four .address span {
+  margin-bottom: 8px;
+}
+footer .col-four .address span a {
+  margin: 0 0 0 5px;
+}
+footer .col-four .address .location {
+  margin-top: 10px;
+}
+footer .col-four .address .location p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .col-four .address .location p strong {
+  font-weight: 700;
 }
 footer .col-four img {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
 }
 footer .col-four p {
   color: #fff;
@@ -22,7 +43,7 @@ footer .col-four p {
 }
 footer .col-four form input {
   border: none;
-  padding: 10px;
+  padding: 11px 12px;
   font-size: 16px;
   color: #021a36;
   box-shadow: none;
@@ -64,13 +85,6 @@ footer .col-four span {
 footer .col-four span a {
   margin-left: 5px;
 }
-footer .col-four .location {
-  margin-top: 10px;
-}
-footer .col-four .location p {
-  margin: 10px 0;
-  font-size: 16px;
-}
 footer .copyright {
   text-align: center;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
@@ -86,6 +100,7 @@ footer .copyright span {
   footer .col-four {
     width: calc(50% - 10px);
     margin: 0 5px 20px;
+    padding: 0;
   }
 }
 @media only screen and (max-width: 650px) {

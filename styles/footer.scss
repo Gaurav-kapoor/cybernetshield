@@ -9,12 +9,36 @@ footer {
     }
 
     .col-four {
-        width: calc(25% - 10px);
+        width: calc(33.33% - 10px);
         margin: 0 5px;
+        padding-right: 110px;
+        .address {
+            p {
+                margin: 10px 0;
+            }
+            span {
+                margin-bottom: 8px;
+                a {
+                    margin: 0 0 0 5px;
+                }
+            }
+            .location {
+                margin-top: 10px;
+    
+                p {
+                    margin: 10px 0;
+                    font-size: 16px;
+                    font-weight: 400;
+                    strong {
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
 
         img {
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
         }
 
         p {
@@ -26,7 +50,7 @@ footer {
         form {
             input {
                 border: none;
-                padding: 10px;
+                padding: 11px 12px;
                 font-size: 16px;
                 color: #021a36;
                 box-shadow: none;
@@ -74,15 +98,6 @@ footer {
                 margin-left: 5px;
             }
         }
-
-        .location {
-            margin-top: 10px;
-
-            p {
-                margin: 10px 0;
-                font-size: 16px;
-            }
-        }
     }
     .copyright {
         text-align: center;
@@ -99,6 +114,7 @@ footer {
         .col-four {
             width: calc(50% - 10px);
             margin: 0 5px 20px;
+            padding: 0;
         }
     }
     

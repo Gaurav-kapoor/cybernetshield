@@ -15,6 +15,22 @@
   text-align: center;
   border-radius: 8px;
   box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+#cards-with-content .cards-wrapper .cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0fc3a7;
+  transition: all 0.3s linear;
+}
+#cards-with-content .cards-wrapper .cards:hover::before {
+  width: 100%;
 }
 #cards-with-content .cards-wrapper .cards img {
   width: 100px;
@@ -22,10 +38,12 @@
   -o-object-fit: cover;
      object-fit: cover;
   margin-bottom: 10px;
+  position: relative;
 }
 #cards-with-content .cards-wrapper .cards h4 {
   color: #fff;
   font-size: 22px;
+  position: relative;
 }
 #cards-with-content .cards-wrapper .cards p {
   font-size: 18px;
@@ -33,6 +51,7 @@
   font-weight: 300;
   margin-top: 15px;
   line-height: 1.35;
+  position: relative;
 }
 @media only screen and (max-width: 992px) {
   #cards-with-content .cards-wrapper .cards {
