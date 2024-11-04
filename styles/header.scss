@@ -111,19 +111,44 @@ header {
                         .inner-dropdown-menu {
                             position: absolute;
                             top: 85px;
-                            width: 96%;
-                            left: 20px;
+                            width: 60%;
+                            height: 600px;
+                            overflow-y: auto;
+                            left: 0;
+                            right: 0;
+                            margin: auto;
                             background: #fff;
                             z-index: 1;
                             opacity: 0;
                             visibility: hidden;
                             transition: all 0.3s ease-in-out;
-                            display: flex;
-                            justify-content: space-between;
                             box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
-
+                            .inner-menu-wrapper {
+                                position: relative;
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                &::before {
+                                    content: "";
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    width: 100%;
+                                    height: 100vh;
+                                    background: url(.././images/pattern.jpg) 40% 30%;
+                                    background-repeat: no-repeat;
+                                    z-index: 0;
+                                    opacity: 0.5;
+                                }
+                            }
+                            
                             .inner-menu-heading {
                                 width: 30%;
+                                position: relative;
+                                background: #fff;
+                                height: fit-content;
 
                                 .inner-menu {
                                     padding: 20px 30px;
@@ -147,23 +172,9 @@ header {
 
                             .inner-menu-subheading {
                                 width: 70%;
-                                background: #f1e9e9;
+                                // background: #f1e9e9;
                                 padding: 20px;
                                 position: relative;
-
-                                &::before {
-                                    content: "";
-                                    position: absolute;
-                                    top: 0;
-                                    bottom: 0;
-                                    right: 0;
-                                    width: 100%;
-                                    height: 100%;
-                                    background: url(.././images/pattern.jpg) 40% 30%;
-                                    background-repeat: no-repeat;
-                                    z-index: 0;
-                                    opacity: 0.5;
-                                }
 
                                 ul {
                                     display: none;
