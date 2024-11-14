@@ -1,0 +1,122 @@
+footer {
+  padding: 120px 0 10px;
+  background: url(.././images/pattern.jpg) 100% 100%;
+}
+footer .column-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .col-four {
+  width: calc(33.33% - 10px);
+  margin: 0 5px;
+  padding-right: 110px;
+}
+footer .col-four .address p {
+  margin: 10px 0;
+}
+footer .col-four .address span {
+  margin-bottom: 8px;
+}
+footer .col-four .address span a {
+  margin: 0 0 0 5px;
+}
+footer .col-four .address .location {
+  margin-top: 10px;
+}
+footer .col-four .address .location p {
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+footer .col-four .address .location p strong {
+  font-weight: 700;
+}
+footer .col-four img {
+  width: 55px;
+  height: 55px;
+}
+footer .col-four p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+footer .col-four form input {
+  border: none;
+  padding: 11px 12px;
+  font-size: 16px;
+  color: #021a36;
+  box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+footer .col-four a {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  margin: 10px 0;
+}
+footer .col-four ul {
+  list-style: none;
+  margin-top: 10px;
+}
+footer .col-four ul li {
+  display: block;
+  margin-bottom: 10px;
+}
+footer .col-four ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+  display: inline-block;
+}
+footer .col-four ul li a:hover {
+  color: #0fc3a7;
+}
+footer .col-four span {
+  display: inline-flex;
+  color: #fff;
+  align-items: baseline;
+}
+footer .col-four span a {
+  margin-left: 5px;
+}
+footer .copyright {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+footer .copyright span {
+  color: #fff;
+  font-size: 14px;
+}
+@media only screen and (max-width: 992px) {
+  footer .column-wrapper {
+    flex-wrap: wrap;
+  }
+  footer .col-four {
+    width: calc(50% - 10px);
+    margin: 0 5px 20px;
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 650px) {
+  footer {
+    padding-top: 60px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  footer .column-wrapper {
+    flex-wrap: wrap;
+  }
+  footer .col-four {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+  footer .col-four p {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=footer.css.map */

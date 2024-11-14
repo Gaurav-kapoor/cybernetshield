@@ -1,0 +1,109 @@
+#our-services {
+    background: #021a36;
+    .cards-wrapper {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 80px;
+
+        .cards {
+            width: calc(25% - 20px);
+            margin: 0 10px 20px;
+            padding: 20px 30px;
+            text-align: left;
+            border-radius: 8px;
+            border: 1px solid #0fc3a7;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background: #0fc3a7;
+                transition: all 0.3s linear;
+            }
+            &:hover {
+                &::before {
+                    width: 100%;
+                }
+            }
+
+            img {
+                width: 150px;
+                height: 150px;
+                -o-object-fit: cover;
+                object-fit: cover;
+                margin-bottom: 10px;
+                overflow: hidden;
+                border-radius: 50%;
+                position: relative;
+            }
+
+            h4 {
+                color: #fff;
+                font-size: 22px;
+                position: relative;
+            }
+
+            p {
+                font-size: 18px;
+                color: #fff;
+                font-weight: 300;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                line-height: 1.35;
+                position: relative;
+            }
+        }
+    }
+    @media only screen and (max-width: 992px) {
+        .cards-wrapper {
+            .cards {
+                width: calc(33.33% - 20px);
+                margin: 0 10px 20px;
+                padding: 20px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+                h4 {
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        .cards-wrapper {
+            .cards {
+                width: calc(50% - 20px);
+                margin: 0 10px 20px;
+                padding: 20px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+                h4 {
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 480px) {
+        .cards-wrapper {
+            .cards {
+                width: 100%;
+                margin: 0 0 20px;
+                padding: 20px;
+            }
+        }
+    }
+}

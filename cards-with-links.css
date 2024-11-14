@@ -1,0 +1,97 @@
+#cards-with-links {
+  background: url(.././images/pattern.jpg) 100% 100%;
+}
+#cards-with-links .cards-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+}
+#cards-with-links .cards-wrapper .cards {
+  width: calc(25% - 20px);
+  margin: 0 10px 20px;
+  background: #fff;
+  padding: 20px 30px;
+  text-align: left;
+  border-radius: 8px;
+  position: relative;
+}
+#cards-with-links .cards-wrapper .cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 8px;
+  border: 8px solid transparent;
+  transition: all 0.3s linear;
+}
+#cards-with-links .cards-wrapper .cards:hover::before {
+  border: 8px solid #0fc3a7;
+}
+#cards-with-links .cards-wrapper .cards img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 10px;
+}
+#cards-with-links .cards-wrapper .cards h4 {
+  color: #021a36;
+  font-size: 22px;
+}
+#cards-with-links .cards-wrapper .cards p {
+  font-size: 18px;
+  color: #021a36;
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  line-height: 1.35;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+  max-height: 150px;
+}
+@media only screen and (max-width: 992px) {
+  #cards-with-links .cards-wrapper .cards {
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px;
+    padding: 20px;
+  }
+  #cards-with-links .cards-wrapper .cards img {
+    width: 70px;
+    height: 70px;
+  }
+  #cards-with-links .cards-wrapper .cards h4 {
+    font-size: 20px;
+  }
+  #cards-with-links .cards-wrapper .cards p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #cards-with-links .cards-wrapper .cards {
+    width: calc(50% - 20px);
+    margin: 0 10px 20px;
+    padding: 20px;
+  }
+  #cards-with-links .cards-wrapper .cards img {
+    width: 70px;
+    height: 70px;
+  }
+  #cards-with-links .cards-wrapper .cards h4 {
+    font-size: 20px;
+  }
+  #cards-with-links .cards-wrapper .cards p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #cards-with-links .cards-wrapper .cards {
+    width: 100%;
+    margin: 0 0 20px;
+    padding: 20px;
+  }
+}/*# sourceMappingURL=cards-with-links.css.map */
