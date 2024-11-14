@@ -14,6 +14,21 @@
   text-align: left;
   border-radius: 8px;
   border: 1px solid #0fc3a7;
+  position: relative;
+}
+#our-services .cards-wrapper .cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #0fc3a7;
+  transition: all 0.3s linear;
+}
+#our-services .cards-wrapper .cards:hover::before {
+  width: 100%;
 }
 #our-services .cards-wrapper .cards img {
   width: 150px;
@@ -23,10 +38,12 @@
   margin-bottom: 10px;
   overflow: hidden;
   border-radius: 50%;
+  position: relative;
 }
 #our-services .cards-wrapper .cards h4 {
   color: #fff;
   font-size: 22px;
+  position: relative;
 }
 #our-services .cards-wrapper .cards p {
   font-size: 18px;
@@ -35,6 +52,7 @@
   margin-top: 15px;
   margin-bottom: 20px;
   line-height: 1.35;
+  position: relative;
 }
 @media only screen and (max-width: 992px) {
   #our-services .cards-wrapper .cards {

@@ -14,6 +14,21 @@
   padding: 20px 30px;
   text-align: left;
   border-radius: 8px;
+  position: relative;
+}
+#cards-with-links .cards-wrapper .cards::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 8px;
+  border: 8px solid transparent;
+  transition: all 0.3s linear;
+}
+#cards-with-links .cards-wrapper .cards:hover::before {
+  border: 8px solid #0fc3a7;
 }
 #cards-with-links .cards-wrapper .cards img {
   width: 100px;

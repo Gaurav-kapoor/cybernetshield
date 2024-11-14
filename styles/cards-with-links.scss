@@ -1,5 +1,4 @@
 #cards-with-links {
-    //background: #021a36;
     background: url(.././images/pattern.jpg) 100% 100%;
     .cards-wrapper {
         width: 100%;
@@ -14,6 +13,24 @@
             padding: 20px 30px;
             text-align: left;
             border-radius: 8px;
+            position: relative;
+            
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border-radius: 8px;
+                border: 8px solid transparent;
+                transition: all 0.3s linear;
+            }
+            &:hover {
+                &::before {
+                    border: 8px solid #0fc3a7;
+                }
+            }
 
             img {
                 width: 100px;
