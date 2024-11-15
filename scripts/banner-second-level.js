@@ -3,7 +3,7 @@ $('#banner-second-level .column-wrapper .slide-wrapper').slick({
     arrows:false,
     infinite: true,
     autoplay:true,
-    speed: 1000,
+    speed: 5000,
     slidesToShow: 1,
     slideToScroll:1
   });
