@@ -7,3 +7,5 @@ $('#banner-second-level .column-wrapper .slide-wrapper').slick({
     slidesToShow: 1,
     slideToScroll:1
   });
+
+  
