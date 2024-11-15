@@ -1,6 +1,6 @@
 #banner-second-level {
-   
-    > img {
+
+    >img {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -11,6 +11,7 @@
         height: 100%;
         object-fit: cover;
     }
+
     .column-wrapper {
         width: 100%;
         display: flex;
@@ -21,12 +22,14 @@
         padding-top: 100px;
 
         .content-wrapper {
-           padding-right: 30px;
+            padding-right: 30px;
         }
+
         h1 {
             color: #fff;
             font-size: 48px;
         }
+
         p {
             color: #fff;
             font-size: 18px;
@@ -34,11 +37,14 @@
             line-height: 1.55em;
             margin-bottom: 20px;
         }
+
         .slide-wrapper {
             max-width: 500px;
+
             .slick-slide {
                 margin: 0 10px;
             }
+
             .slide {
                 background: #021a36;
                 padding: 20px 15px;
@@ -46,7 +52,7 @@
                 overflow: hidden;
                 text-align: center;
                 box-shadow: 0 5px 5px 0px rgba(255, 255, 255, 0.1);
-                
+
                 img {
                     width: 50px;
                     height: 50px;
@@ -59,12 +65,14 @@
                     color: #fff;
                     margin-top: 10px;
                 }
+
                 p {
                     font-size: 18px;
                     font-weight: 300;
                     color: #fff;
                     margin-top: 10px;
                 }
+
                 ul {
                     font-size: 18px;
                     font-weight: 300;
@@ -74,8 +82,40 @@
                     text-align: left;
                     margin: 15px auto 0;
                     width: fit-content;
+
                     li {
                         margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 992px) {
+        .column-wrapper {
+            flex-wrap: wrap;
+            padding: 0;
+
+            .content-wrapper {
+                h1 {
+                    font-size: 32px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .slide-wrapper {
+                max-width: 100%;
+
+                .slide {
+                    h5 {
+                        font-size: 22px;
+                    }
+
+                    ul {
+                        font-size: 16px;
                     }
                 }
             }
