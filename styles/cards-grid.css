@@ -1,3 +1,6 @@
+#cards-grid {
+  background: url(.././images/pattern.jpg) 100% 100%;
+}
 #cards-grid .cards-wrapper {
   width: 100%;
   display: flex;

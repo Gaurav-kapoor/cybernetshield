@@ -1,0 +1,42 @@
+.service-benefits {
+  background: url(.././images/pattern.jpg);
+}
+.service-benefits .column-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 50px;
+}
+.service-benefits .column-wrapper .card {
+  width: calc(20% - 20px);
+  margin: 0 10px 20px;
+  padding: 10px;
+  min-height: 124px;
+  background: #0fc3a7;
+  border-radius: 8px;
+}
+.service-benefits .column-wrapper .card img {
+  width: 50px;
+  height: 50px;
+}
+.service-benefits .column-wrapper .card p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+@media only screen and (max-width: 1100px) {
+  .service-benefits .column-wrapper .card {
+    width: calc(33.33% - 20px);
+  }
+}
+@media only screen and (max-width: 767px) {
+  .service-benefits .column-wrapper .card {
+    width: calc(50% - 20px);
+  }
+}
+@media only screen and (max-width: 480px) {
+  .service-benefits .column-wrapper .card {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}/*# sourceMappingURL=service-benefits.css.map */

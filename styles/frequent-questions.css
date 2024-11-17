@@ -1,0 +1,68 @@
+.frequent-questions {
+  background: #021a36;
+}
+.frequent-questions .accordions {
+  width: 90%;
+  max-width: 60ch;
+  margin: 50px auto 0;
+}
+.frequent-questions .accordion {
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: border-color 0.5s ease;
+  background-color: #fff;
+}
+.frequent-questions .accordion:hover {
+  border-color: #000;
+}
+.frequent-questions .accordion__header {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20px 50px 20px 20px;
+  color: #021a36;
+}
+.frequent-questions .accordion__header:after, .frequent-questions .accordion__header:before {
+  content: "";
+  position: absolute;
+  right: 1.5em;
+  width: 2px;
+  height: 0.75em;
+  background-color: #021a36;
+  transition: all 0.2s;
+}
+.frequent-questions .accordion__header:after {
+  transform: rotate(90deg);
+}
+.frequent-questions .accordion:has(input:checked) .accordion__header {
+  color: #021a36;
+}
+.frequent-questions .accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+.frequent-questions .accordion__content * {
+  padding: 0 1em 1em;
+}
+.frequent-questions .accordion input {
+  display: none;
+}
+.frequent-questions .accordion:has(input:checked) {
+  background-color: #fff;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+.frequent-questions .accordion input:checked ~ .accordion__header:before {
+  transform: rotate(270deg) !important;
+  background-color: #021a36;
+}
+.frequent-questions .accordion input:checked ~ .accordion__header:after {
+  transform: rotate(270deg) !important;
+  background-color: #021a36;
+}
+.frequent-questions .accordion input:checked ~ .accordion__content {
+  max-height: 1000px;
+}/*# sourceMappingURL=frequent-questions.css.map */

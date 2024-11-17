@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 80px;
 }
 .careers .opening-wrapper .opening {
   width: calc(50% - 20px);
@@ -40,6 +39,15 @@
   margin-bottom: 20px;
   line-height: 1.35;
 }
+@media only screen and (max-width: 767px) {
+  .careers .opening-wrapper {
+    margin: 0;
+  }
+  .careers .opening-wrapper .opening {
+    width: 100%;
+    margin: 0 0 20px;
+  }
+}
 
 .form-wrapper {
   padding-bottom: 0;
@@ -62,4 +70,12 @@
      -moz-appearance: none;
           appearance: none;
   outline: none;
+}
+@media only screen and (max-width: 767px) {
+  .form-wrapper h3 {
+    font-size: 24px;
+  }
+  .form-wrapper input {
+    width: 100%;
+  }
 }/*# sourceMappingURL=careers.css.map */

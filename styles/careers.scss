@@ -3,7 +3,6 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
-        margin-top: 80px;
         .opening {
             width: calc(50% - 20px);
             margin: 0 10px 20px;
@@ -45,6 +44,15 @@
             }
         }
     }
+    @media only screen and (max-width: 767px) {
+        .opening-wrapper {
+            margin: 0;
+        .opening {
+            width: 100%;
+            margin: 0 0 20px;
+        }
+    }
+    }
 }
 
 .form-wrapper{
@@ -65,5 +73,13 @@
         background: transparent;
         appearance: none;
         outline: none;
+    }
+    @media only screen and (max-width: 767px) {
+        h3 {
+            font-size: 24px;
+        }
+        input {
+            width: 100%;
+        }
     }
 }
