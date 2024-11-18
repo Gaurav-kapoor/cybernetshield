@@ -6,9 +6,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 80px;
+  justify-content: center;
 }
 #cards-with-links .cards-wrapper .cards {
-  width: calc(25% - 20px);
+  width: calc(33.33% - 20px);
   margin: 0 10px 20px;
   background: #fff;
   padding: 20px 30px;

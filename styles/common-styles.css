@@ -39,6 +39,10 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
+    text-decoration: none;
+    a{
+        text-decoration: none;
+    }
 
     span {
         color: #fff;
@@ -87,7 +91,10 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 10px;
     overflow: hidden;
-
+    text-decoration: none;
+    a{
+        text-decoration: none;
+    }
     span {
         color: #fff;
         font-size: 16px;

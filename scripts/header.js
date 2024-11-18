@@ -8,7 +8,7 @@ const add_class = () => header.classList.add("color")
   window.addEventListener('scroll', function() { 
     scrollpos = window.scrollY;
 
-    if (scrollpos >= 50) { add_class() }
+    if (scrollpos >= 5) { add_class() } 
     else { remove_class() }
   })
 
@@ -29,7 +29,7 @@ let innernavhead = $('header .header-wrapper .menu ul li.dropdown-menu .inner-dr
     $(this).parent().find('.mob-menu').slideToggle();
   })
 
-
+if($('#success-story').length > 0) {
 let a = 0;
 $(window).scroll(function() {
 
@@ -49,6 +49,7 @@ $(window).scroll(function() {
     a = 1;
   }
 });
+}
 
 
 
