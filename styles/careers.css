@@ -50,7 +50,7 @@
 }
 
 .form-wrapper {
-  padding-bottom: 20px;
+  padding-bottom: 0;
   text-align: center;
   display: none;
 }
@@ -60,7 +60,7 @@
   color: #021a36;
   margin-bottom: 15px;
 }
-.form-wrapper input,select,textarea {
+.form-wrapper input {
   padding: 12px;
   border: 2px solid #021a36;
   font-size: 16px;
@@ -70,7 +70,6 @@
      -moz-appearance: none;
           appearance: none;
   outline: none;
-  width: 100%;
 }
 @media only screen and (max-width: 767px) {
   .form-wrapper h3 {
