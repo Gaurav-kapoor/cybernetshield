@@ -50,7 +50,6 @@
 }
 
 .form-wrapper {
-  padding-bottom: 0;
   text-align: center;
   display: none;
 }
@@ -60,20 +59,36 @@
   color: #021a36;
   margin-bottom: 15px;
 }
-.form-wrapper input {
-  padding: 12px;
-  border: 2px solid #021a36;
+.form-wrapper form {
+  width: 60%;
+  margin: 0 auto;
+}
+.form-wrapper input, .form-wrapper select, .form-wrapper textarea {
+  padding: 0 12px 10px 0;
+  border: none;
+  border-bottom: 2px solid #021a36;
   font-size: 16px;
   font-weight: 500;
   background: transparent;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   outline: none;
+  width: 100%;
+}
+.form-wrapper input:-webkit-autofill,
+.form-wrapper input:-webkit-autofill:hover,
+.form-wrapper input:-webkit-autofill:focus,
+.form-wrapper input:-webkit-autofill:active {
+  -webkit-transition: background-color 9999s ease-in-out 0s;
+  transition: background-color 9999s ease-in-out 0s;
 }
 @media only screen and (max-width: 767px) {
   .form-wrapper h3 {
     font-size: 24px;
+  }
+  .form-wrapper form {
+    width: 100%;
   }
   .form-wrapper input {
     width: 100%;

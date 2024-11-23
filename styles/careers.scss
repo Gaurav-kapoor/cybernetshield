@@ -3,6 +3,7 @@
         width: 100%;
         display: flex;
         flex-wrap: wrap;
+
         .opening {
             width: calc(50% - 20px);
             margin: 0 10px 20px;
@@ -12,7 +13,7 @@
             border-radius: 8px;
             position: relative;
             border: 2px solid #0fc3a7;
-            
+
             &::before {
                 content: '';
                 position: absolute;
@@ -24,11 +25,13 @@
                 border: 8px solid transparent;
                 transition: all 0.3s linear;
             }
+
             &:hover {
                 &::before {
                     border: 8px solid #0fc3a7;
                 }
             }
+
             h4 {
                 color: #021a36;
                 font-size: 22px;
@@ -44,40 +47,64 @@
             }
         }
     }
+
     @media only screen and (max-width: 767px) {
         .opening-wrapper {
             margin: 0;
-        .opening {
-            width: 100%;
-            margin: 0 0 20px;
+
+            .opening {
+                width: 100%;
+                margin: 0 0 20px;
+            }
         }
-    }
     }
 }
 
-.form-wrapper{
-    padding-bottom: 0;
+.form-wrapper {
     text-align: center;
     display: none;
+
     h3 {
         font-size: 30px;
         font-weight: 400;
         color: #021a36;
         margin-bottom: 15px;
     }
-    input {
-        padding: 12px;
-        border: 2px solid #021a36;
+
+    form {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    input,select, textarea {
+        padding: 0 12px 10px 0;
+        border: none;
+        border-bottom: 2px solid #021a36;
         font-size: 16px;
         font-weight: 500;
         background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
         appearance: none;
         outline: none;
+        width: 100%;
     }
+    input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 9999s ease-in-out 0s;
+}
+
     @media only screen and (max-width: 767px) {
         h3 {
             font-size: 24px;
         }
+
+        form {
+            width: 100%;
+        }
+
         input {
             width: 100%;
         }
