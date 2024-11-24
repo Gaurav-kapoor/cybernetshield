@@ -92,8 +92,8 @@ header .header-wrapper .menu ul li.dropdown-menu > a::before {
 header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu {
   position: absolute;
   top: 85px;
-  width: 60%;
-  height: 600px;
+  width: 80%;
+  height: auto;
   overflow-y: auto;
   left: 0;
   right: 0;
@@ -134,14 +134,14 @@ header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-men
   height: fit-content;
 }
 header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading .inner-menu {
-  padding: 20px 30px;
+  padding: 20px 30px 12px;
 }
 header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading .inner-menu.show {
   background: #f1e9e9;
 }
 header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading a {
   display: block;
-  margin-bottom: 12px;
+  margin-bottom: 0;
 }
 header .header-wrapper .menu ul li.dropdown-menu .inner-dropdown-menu .inner-menu-heading p {
   margin-top: 8px;

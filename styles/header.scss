@@ -111,8 +111,8 @@ header {
                         .inner-dropdown-menu {
                             position: absolute;
                             top: 85px;
-                            width: 60%;
-                            height: 600px;
+                            width: 80%;
+                            height: auto;
                             overflow-y: auto;
                             left: 0;
                             right: 0;
@@ -151,7 +151,7 @@ header {
                                 height: fit-content;
 
                                 .inner-menu {
-                                    padding: 20px 30px;
+                                    padding: 20px 30px 12px;
 
                                     &.show {
                                         background: #f1e9e9;
@@ -160,7 +160,7 @@ header {
 
                                 a {
                                     display: block;
-                                    margin-bottom: 12px;
+                                    margin-bottom: 0;
                                 }
 
                                 p {
