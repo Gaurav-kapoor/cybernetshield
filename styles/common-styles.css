@@ -68,7 +68,8 @@ section {
 }
 
 .btn-prim:hover::before {
-    height: 0;
+    /* height: 0; */
+    background: transparent;
 }
 
 .btn-prim:hover {
@@ -119,7 +120,8 @@ section {
 }
 
 .btn-prim2:hover::before {
-    height: 0;
+    /* height: 0; */
+    background: transparent;
 }
 
 .btn-prim2:hover {
